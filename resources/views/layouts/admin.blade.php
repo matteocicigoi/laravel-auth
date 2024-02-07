@@ -49,7 +49,7 @@
             </div>
         </header>
 
-        <div class="container-fluid vh-100">
+        <div class="container-fluid" style="height: calc(100vh - 56px)">
             <div class="row h-100">
                 <!-- Definire solo parte del menu di navigazione inizialmente per poi
         aggiungere i link necessari giorno per giorno
@@ -65,8 +65,8 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-success {{ Route::currentRouteName() == 'dashboard' ? 'bg-secondary' : '' }}"
-                                    href="admin/repositories">
-                                    <i class="fa-solid fa-folder fa-lg fa-fw"></i> Repositories
+                                    href="{{ route('admin.projects.index') }}">
+                                    <i class="fa-solid fa-folder fa-lg fa-fw"></i> Projects 
                                 </a>
                             </li>
                         </ul>
